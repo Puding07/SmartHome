@@ -1,5 +1,5 @@
 {
-  "name": "webpack-demo",
+  "name": "SmartHome_WebPack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,12 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lodash": "^4.17.15",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.8.0"
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "loadsh": "0.0.4"
+    "loadsh": "0.0.4",
+    "lodash": "^4.17.15"
   }
 }
