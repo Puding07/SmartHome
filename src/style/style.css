@@ -1,4 +1,36 @@
+@media screen and (min-width: 800px) {
 
+    body {
+        background-color: #13082F;
+        font-family: 'Gugi', cursive;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        height: 100%;
+    }
+
+    .sandwich-menu {
+        display: none;
+    }
+
+    .roll-menu {
+        display: none;
+    }
+
+
+    .living-switch {
+        display: none;
+        position: absolute;
+        height: 60%;
+        width: 45%;
+        margin-left: 14%;
+        margin-right: 5%;
+        bottom: 10%;
+        z-index: 1;
+        color: #fff;
+        background-color: rgb(38, 21, 71);
+        border-radius: 10px;
+}
+}
 /*-----------------------Animations---------------------------*/
 
 @-webkit-keyframes scale {
@@ -71,27 +103,21 @@
 
 /*-----------------------------Header--------------------------------------*/
 
+html {
+    background-color: #13082F;
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+    height: 100%;
+}
+
 .loader {
     position: absolute;
     z-index: 1;
     margin-left: 48%;
     margin-top: 20%;
-}
-
-html {
-    background-color: #13082F;
-    -moz-user-select: none; /* Firefox */
-     -ms-user-select: none; /* Internet Explorer */
-  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
- -webkit-user-select: none; /* Chrome, Safari, and Opera */
- -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-}
-
-body {
-   background-color: #13082F;
-   font-family: 'Gugi', cursive;
-   padding-left: 1.5%;
-   padding-right: 1.5%;
 }
 
 .blurr {
@@ -160,7 +186,7 @@ body {
     position: absolute;
     right: 3.6vw;
     border-radius: 10px;
-    margin-top: 21px;
+    margin-top: 1%;
     width: 200px;
 }
 
@@ -215,6 +241,14 @@ body {
 
 .notes-container {
     display: none;
+    position: absolute;
+    width: 35%;
+    right: 3.8%;
+    margin-top: 3.7%;
+    background-color: #1D1D3D;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
 }
 
 .notes-container:hover .note {
@@ -223,41 +257,24 @@ body {
 }
 
 .notifications-container {
-    position: absolute;
     display: none;
-}
-
-.notifications-conctainer:hover .notifications {
-    border-radius: 20px;
-    background-color: #13082F;
-}
-
-#dropdown-notes:checked +.notes-container {
-    display: block;
     position: absolute;
-    width: 15%;
+    z-index: 2;
+    width: 35%;
     right: 3.8%;
     margin-top: 3.7%;
     background-color: #1D1D3D;
     text-align: center;
     font-size: 17px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-#dropdown-noti:checked +.notifications-container {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    width: 15vw;
-    right: 9vw;
-    margin-top: 1.5vw;
-    background-color: #1D1D3D;
-    text-align: center;
-    font-size: 17px;
+.notifications {
+    background-color: #13082F;
 }
 
 .logo {
-    margin-right: 1vw;
+    margin-right: 10%;
     background: linear-gradient(to right, #00C7CC 20%, #330867 280%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -268,7 +285,7 @@ body {
 }
 
 #header-space {
-    padding: 15%;
+    padding: 23%;
 }
 
 .home {
@@ -307,6 +324,10 @@ body {
     margin: none;
 }
 
+.logo-sign {
+    margin-left: 1%;
+}
+
 .logo-sign:hover span {
     text-shadow:0 0 8px #00C7CC;
     background-size: 5vw;
@@ -341,7 +362,7 @@ body {
 /*------------------------------MAIN-------------------------------------*/
 
 .main {
-    padding: 8.5% 0;
+    padding: 6% 0 5%;
     background-color: #1A0836;
     color: #fff;
     border-top-left-radius: 30px;
@@ -388,8 +409,8 @@ body {
 
 .fas.fa-search {
     position: absolute;
-    right: 8%;
-    padding-top: 2.8%;
+    right: 6%;
+    padding-top: 0.7%;
 }
 
 input[type="text"]::placeholder {
@@ -431,6 +452,34 @@ input[type="text"]::placeholder {
 
 .rooms-container input:checked +#rooms{
     display: inline-flex;
+}
+
+#living-close {
+    display: none;
+}
+
+.hall-switch {
+    display: none;
+}
+
+.bed-switch {
+    display: none;
+}
+
+.kitchen-switch {
+    display: none;
+}
+
+.kids-switch {
+    display: none;
+}
+
+.dinning-switch {
+    display: none;
+}
+
+.garage-switch {
+    display: none;
 }
 
 #rooms div {
