@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     body {
         background-color: #13082F;
@@ -13,7 +13,7 @@
         width: 100%;
         border-radius: 0;
         padding: 0;
-        height: 10%;
+        height: 9%;
     }
 
     .header-divs {
@@ -28,8 +28,8 @@
     }
 
     .sandwich-menu {
-        padding-left: 3%;
-        padding-right: 24%;
+        padding-left: 5%;
+        padding-right: 21%;
         z-index: 2;
     }
 
@@ -82,7 +82,7 @@
     }
 
     #header-space {
-        padding: 9%;
+        padding: 8%;
     }
 
     .logo-sign {
@@ -200,7 +200,8 @@
     }
 
     .rooms {
-        height: 60%;
+        height: 65%;
+        width: 16.5vw;
     }
 
     .living-switch {
