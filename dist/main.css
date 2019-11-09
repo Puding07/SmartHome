@@ -104,12 +104,15 @@
 /*-----------------------------Header--------------------------------------*/
 
 html {
-    background-color: #13082F;
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer */
     -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
     -webkit-user-select: none; /* Chrome, Safari, and Opera */
     -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+    height: 100%;
+}
+
+.loader-content {
     height: 100%;
 }
 
@@ -281,11 +284,11 @@ html {
 }
 
 #logo-space {
-    padding: 3%;
+    padding: 0 3%;
 }
 
 #header-space {
-    padding: 23%;
+    padding: 0 23%;
 }
 
 .home {
@@ -482,7 +485,7 @@ input[type="text"]::placeholder {
     display: none;
 }
 
-#rooms div {
+#rooms div:not(.living-switch) {
     height: 18vw;
     width: 15.5vw;
     background-color: #21123E;
@@ -806,10 +809,6 @@ input[type="text"]::placeholder {
 
     #rooms div {
         height: 60%;
-    }
-
-    .room-displays input {
-        display: block;
     }
 
     .living-switch {

@@ -203,10 +203,6 @@
         height: 60%;
     }
 
-    .room-displays input {
-        display: block;
-    }
-
     .living-switch {
         display: none;
         position: absolute;
