@@ -1,36 +1,8 @@
-@media screen and (min-width: 800px) {
-
-    body {
-        background-color: #13082F;
-        font-family: 'Gugi', cursive;
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-        height: 100%;
-    }
-
-    .sandwich-menu {
-        display: none;
-    }
-
-    .roll-menu {
-        display: none;
-    }
-
-
-    .living-switch {
-        display: none;
-        position: absolute;
-        height: 60%;
-        width: 45%;
-        margin-left: 14%;
-        margin-right: 5%;
-        bottom: 10%;
-        z-index: 1;
-        color: #fff;
-        background-color: rgb(38, 21, 71);
-        border-radius: 10px;
+body {
+  background-color: #1A0836;
 }
-}
+
+
 /*-----------------------Animations---------------------------*/
 
 @-webkit-keyframes scale {
@@ -161,7 +133,8 @@ html {
 }
 
 .header-divs {
-    display: inline-flex;
+    display: flex;
+    flex-grow: 1;
     width: 100%;
     color: #fff;
     font-size: 22px;
@@ -300,6 +273,11 @@ html {
     display: inline-flex;
 }
 
+.user-menu {
+  margin-left: auto;
+  display: flex;
+}
+
 .profile {
     margin-right: 1.5vw;
 }
@@ -336,29 +314,17 @@ html {
     background-size: 5vw;
 }
 
-.home:hover {
+.menu-container {
+  display: flex;
+  flex-grow: .5;
+}
+
+.menu-item:hover {
     text-shadow:0 0 8px #00C7CC;
     background-size: 5vw;
 }
-
-.page2:hover {
-    text-shadow:0 0 8px #00C7CC;
-    background-size: 5vw;
-}
-
-.notes:hover {
-    text-shadow:0 0 8px #00C7CC;
-    background-size: 5vw;
-}
-
-.noti:hover {
-    text-shadow:0 0 8px #00C7CC;
-    background-size: 5vw;
-}
-
-.menu:hover {
-    text-shadow:0 0 8px #00C7CC;
-    background-size: 5vw;
+.menu-item {
+  flex-grow: 1;
 }
 
 
@@ -372,13 +338,18 @@ html {
     border-top-right-radius: 30px;
 }
 
+.main .rooms-container {
+  padding-top: 10%;
+}
+
 .main-container {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
 }
 
 .top-container {
-    display: inline-flex;
+    display: flex;
+    
 }
 
 .wellcome {
@@ -391,7 +362,7 @@ html {
 }
 
 .searchbar-container {
-    margin-left: 49.6vw;
+    margin-left: auto;
 }
 
 .searchbar-container input, .searchbar-container-mob input {
@@ -605,4 +576,37 @@ input[type="text"]::placeholder {
 .column-name {
     font-size: 16px;
     
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        background-color: #13082F;
+        font-family: 'Gugi', cursive;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+
+    .sandwich-menu {
+        display: none;
+    }
+
+    .roll-menu {
+        display: none;
+    }
+
+
+    .living-switch {
+        display: none;
+        position: absolute;
+        height: 60%;
+        width: 45%;
+        margin-left: 14%;
+        margin-right: 5%;
+        bottom: 10%;
+        z-index: 1;
+        color: #fff;
+        background-color: rgb(38, 21, 71);
+        border-radius: 10px;
+}
 }
