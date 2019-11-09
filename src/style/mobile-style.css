@@ -1,16 +1,325 @@
 @media screen and (max-width: 400px) {
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     .header {
-        margin-top: 0;
+        position: fixed;
         width: 100%;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0;
+        padding: 0;
+        height: 10%;
+    }
+
+    .header-divs {
+        display: inline-flex;
+        align-items: center; 
+        padding: 0;
+        padding-top: 1%;
+    }
+
+    #sandwich-menu {
+        display: none;
+    }
+
+    .sandwich-menu {
+        padding-left: 3%;
+        padding-right: 24%;
+        z-index: 2;
+    }
+
+    .roll-menu {
+        display: none;
+        position: fixed;
+        padding-top: 15%;
+        height: 99.8%;
+        width: 100%;
+        background-color: #13082F;
+        text-align: center;
+        z-index: 1;
+        border-top-right-radius: 20px;
+        color: #fff;
+    }
+
+    .roll-contents {
+        padding-top: 3%;
+        height: 100%;
+    }
+
+    .roll-contents > div{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .settings-mob {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .settings-mob span {
+        display: inline-block;
+    }
+
+    .settings-mob:active {
+        background-color: rgb(48, 25, 95);
+        border-radius: 10px;
+    }
+
+    .profile-settings-mob:active {
+        background-color: rgb(48, 25, 95);
+        border-radius: 10px;
+    }
+
+    .logout-mob:active {
+        background-color: rgb(48, 25, 95);
+        border-radius: 10px;
+    }
+
+    #header-space {
+        padding: 9%;
+    }
+
+    .logo-sign {
+        padding-left: 0%;
+    }
+    
+    #logo-space {
+        padding: 0;
+    }
+
+    #noti-space {
+        padding: 13%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .page2 {
+        display: none;
+    }
+
+    .name {
+        display: none;
     }
 
     .blurr {
         display: none;
     }
 
+    .loader-content {
+        height: 95%;
+    }
+
+    #dropdown-notes:checked + .notes-container {
+        margin-top: 11.1%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        width: 100%;
+        right: 0;
+        border-radius: 10px;
+    }
+
+    #dropdown-noti:checked +.notifications-container {
+        margin-top: 11.1%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        width: 100%;
+        right: 0;
+        border-radius: 10px;
+
+    }
+
+/*----------------------------------------------------------------------------------------------*/
+
     .main {
+        padding-top: 15%;
+        height: 100%;
+    }
+
+    .top-container {
         display: none;
+        padding-top: 3%;
+        width: 95%;
+    }
+
+    .wellcome-container {
+        display: none;
+    }
+
+    .searchbar-container {
+        display: none;
+    }
+
+    .searchbar-container-mob {
+        display: block;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .searchbar-container-mob input {
+        width: 80%;
+        text-indent: 0%;
+        font-size: 18px;
+    }
+
+    .searchbar-container-mob input::placeholder {
+        color: rgb(233, 233, 233);
+        text-indent: 45%;
+    }
+
+    .fas.fa-search {
+        right: 8%;
+        padding-top: 2.8%;
+    }
+
+    .rooms-container {
+        height: 25%;
+        padding-top: 3%;
+        padding-bottom: 10%;
+    }
+
+    .rooms-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    #rooms {
+        height: 100%;
+    }
+
+    #rooms div {
+        height: 60%;
+    }
+
+    .room-displays input {
+        display: block;
+    }
+
+    .living-switch {
+        display: none;
+        position: absolute;
+        height: 50%;
+        width: 85%;
+        margin-left: 5%;
+        margin-right: 5%;
+        z-index: 1;
+        color: #fff;
+        background-color: rgb(38, 21, 71);
+        border-radius: 10px;
+    }
+
+    #living-close {
+        display: none;
+    }
+
+    .hall-switch {
+        display: none;
+    }
+
+    .bed-switch {
+        display: none;
+    }
+
+    .kitchen-switch {
+        display: none;
+    }
+
+    .kids-switch {
+        display: none;
+    }
+
+    .dinning-switch {
+        display: none;
+    }
+
+    .garage-switch {
+        display: none;
+    }
+
+    .room-pict {
+        font-size: 200%;
+    }
+
+    .dot {
+        font-size: 90%;
+        padding-left: 50%;
+        padding-top: 0%;
+        padding-bottom: 20%;
+    }
+
+    .living-room .dot {
+        color: #E8A61A;
+        text-shadow:0 0 5px #E8A61A;
+    }
+    
+    .hall .dot {
+        color: #94F500;
+        text-shadow:0 0 5px #94F500;
+    }
+    
+    .bed-room .dot {
+        color: #59F0E7;
+        text-shadow:0 0 5px #59F0E7;
+    }
+    
+    .kitchen .dot {
+        color: #E8A61A;
+        text-shadow:0 0 5px #E8A61A;
+    }
+    
+    .kids-room .dot {
+        color: #94F500;
+        text-shadow:0 0 5px #94F500;
+    }
+    
+    .dinning-room .dot {
+        color: #E8A61A;
+        text-shadow:0 0 5px #E8A61A;
+    }
+    
+    .garage .dot {
+        color: #59F0E7;
+        text-shadow:0 0 5px #59F0E7;
+    }
+
+    .devices-number {
+        display: none;
+    }
+
+    .kwh-consumption {
+        display: none;
+    }
+
+    .devices-container {
+        height: 30%;
+    }
+
+    .devices-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .devices {
+        height: 100%;
+        width: 100%;
+    }
+
+    .devices > div {
+        height: 60%;
+        width: 20%;
     }
 }

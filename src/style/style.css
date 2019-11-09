@@ -80,24 +80,29 @@
 
 html {
     background-color: #13082F;
+    -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+ -webkit-user-select: none; /* Chrome, Safari, and Opera */
+ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 body {
    background-color: #13082F;
    font-family: 'Gugi', cursive;
-   margin-left: 1.5%;
+   padding-left: 1.5%;
    padding-right: 1.5%;
 }
 
 .blurr {
     position: fixed;
     height: 4vw;
-    width: 96.5%;
-    background-color: rgba(29, 29, 61, 0.808);
+    width: 97%;
+    background-color: #13082F;
     margin-top: -10px;
     z-index: 1;
 }
-
+/*
 .header {
     margin-top: 1.5%;
     position: fixed;
@@ -108,13 +113,45 @@ body {
     height: 5vw;
     width: 96.5%;
     z-index: 2;
-    /*padding-right: 1.5%;*/
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     justify-content: center;
+}*/
+
+.header {
+    position: fixed;
+    z-index: 2;
+    display: inline-flex;
+    width: 97%;
+    height: 5vw;
+    color: #fff;
+    font-size: 22px;
+    background-color: rgb(23, 17, 48);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
-.header > div, .header > label{
+.header-divs {
+    display: inline-flex;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    background-color: rgb(23, 17, 48);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+/*
+.vl {
+    border-left: 2px solid rgba(95, 189, 192, 0.267);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 4;
+    top: 0;
+  }
+*/
+.header-divs, .header > label{
     padding: 1.5% 0;
 }
 
@@ -123,7 +160,7 @@ body {
     position: absolute;
     right: 3.6vw;
     border-radius: 10px;
-    padding-top: 21px;
+    margin-top: 21px;
     width: 200px;
 }
 
@@ -177,8 +214,12 @@ body {
 }
 
 .notes-container {
-    position: absolute;
     display: none;
+}
+
+.notes-container:hover .note {
+    border-radius: 20px;
+    background-color: #13082F;
 }
 
 .notifications-container {
@@ -186,15 +227,21 @@ body {
     display: none;
 }
 
+.notifications-conctainer:hover .notifications {
+    border-radius: 20px;
+    background-color: #13082F;
+}
+
 #dropdown-notes:checked +.notes-container {
     display: block;
     position: absolute;
-    width: 15vw;
-    right: 11vw;
-    margin-top: 1.5vw;
+    width: 15%;
+    right: 3.8%;
+    margin-top: 3.7%;
     background-color: #1D1D3D;
     text-align: center;
     font-size: 17px;
+    border-radius: 20px;
 }
 
 #dropdown-noti:checked +.notifications-container {
@@ -216,21 +263,21 @@ body {
 	-webkit-text-fill-color: transparent;
 }
 
-.logo-sign {
-    margin-right: 6vw;
+#logo-space {
+    padding: 3%;
+}
+
+#header-space {
+    padding: 15%;
 }
 
 .home {
-    margin-right: 5vw;
     width: 5vw;
-}
-
-.page2 {
-    margin-right: 40vw;
 }
 
 .noti-conctainer {
     margin-right: 1vw;
+    display: inline-flex;
 }
 
 .profile {
@@ -299,8 +346,6 @@ body {
     color: #fff;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }
 
 .main-container {
@@ -325,7 +370,7 @@ body {
     margin-left: 49.6vw;
 }
 
-.searchbar-container input {
+.searchbar-container input, .searchbar-container-mob input {
     background-color: #221340;
     border: none;
     border-radius: 5px;
@@ -343,8 +388,8 @@ body {
 
 .fas.fa-search {
     position: absolute;
-    right: 8vw;
-    padding-top: 0.7vw;
+    right: 8%;
+    padding-top: 2.8%;
 }
 
 input[type="text"]::placeholder {
@@ -359,6 +404,11 @@ input[type="text"]::placeholder {
     margin-right: 2.5vw;
 }
 
+.rooms-container label {
+    padding-left: 0.5vw;
+    font-size: 20px;
+}
+
 .rooms-dropdown {
     background: linear-gradient(to right, #00C7CC 20%, #330867 280%);
 	-webkit-background-clip: text;
@@ -370,12 +420,12 @@ input[type="text"]::placeholder {
     font-size: 20px;
 }
 
-.rooms-container input {
+.rooms-center input {
     display: none;
 }
 
 #rooms {
-    display: none;
+    display: inline-flex;
     width: 89vw;
 }
 
@@ -416,59 +466,44 @@ input[type="text"]::placeholder {
     padding-top: 2vw;
 }
 
-.living-room .dot {
-    color: #E8A61A;
+.dot {
     position: absolute;
     padding-left: 58%;
     padding-top: 2%;
+}
+
+.living-room .dot {
+    color: #E8A61A;
     text-shadow:0 0 8px #E8A61A;
 }
 
 .hall .dot {
     color: #94F500;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #94F500;
 }
 
 .bed-room .dot {
     color: #59F0E7;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #59F0E7;
 }
 
 .kitchen .dot {
     color: #E8A61A;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #E8A61A;
 }
 
 .kids-room .dot {
     color: #94F500;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #94F500;
 }
 
 .dinning-room .dot {
     color: #E8A61A;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #E8A61A;
 }
 
 .garage .dot {
     color: #59F0E7;
-    position: absolute;
-    padding-left: 58%;
-    padding-top: 2%;
     text-shadow:0 0 8px #59F0E7;
 }
 
@@ -495,12 +530,8 @@ input[type="text"]::placeholder {
 }
 
 .devices {
-    display: none;
-    width: 89vw;
-}
-
-#dropdown-devices:checked +.devices{
     display: inline-flex;
+    width: 89vw;
 }
 
 .devices > div {

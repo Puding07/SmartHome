@@ -10,7 +10,9 @@ module.exports = {
     main: './src/app/index.js',
     content: './src/public/content.html',
     style: './src/style/style.css',
-    loading: './src/app/loading.js'
+    mobile_style: './src/style/mobile-style.css',
+    loading: './src/app/loading.js',
+    selector: './src/app/selector.js'
   },
   module: {
     rules: [
@@ -66,11 +68,12 @@ module.exports = {
     }),
     new HTMLWebPackPlugin({
       template: './src/public/content.html',
-      filename: './content.html'
+      filename: './content.html',
+      chunks: ['selector']
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[style].css'
+      chunkFilename: ['style', 'mobile_style']
     })
   ]
 };
