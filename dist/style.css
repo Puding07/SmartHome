@@ -30,6 +30,11 @@
         background-color: rgb(38, 21, 71);
         border-radius: 10px;
 }
+
+.rooms {
+    height: 18vw;
+    width: 15.5vw;
+}
 }
 /*-----------------------Animations---------------------------*/
 
@@ -131,21 +136,6 @@ html {
     margin-top: -10px;
     z-index: 1;
 }
-/*
-.header {
-    margin-top: 1.5%;
-    position: fixed;
-    background-color: #1D1D3D;
-    color: #fff;
-    font-size: 22px;
-    display: inline-flex;
-    height: 5vw;
-    width: 96.5%;
-    z-index: 2;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    justify-content: center;
-}*/
 
 .header {
     position: fixed;
@@ -169,7 +159,7 @@ html {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-/*
+
 .vl {
     border-left: 2px solid rgba(95, 189, 192, 0.267);
     height: 100%;
@@ -178,8 +168,8 @@ html {
     margin-left: -3px;
     z-index: 4;
     top: 0;
-  }
-*/
+}
+
 .header-divs, .header > label{
     padding: 1.5% 0;
 }
@@ -457,6 +447,17 @@ input[type="text"]::placeholder {
     display: inline-flex;
 }
 
+
+.rooms {
+    background-color: #21123E;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 #living-close {
     display: none;
 }
@@ -483,18 +484,6 @@ input[type="text"]::placeholder {
 
 .garage-switch {
     display: none;
-}
-
-#rooms div:not(.living-switch) {
-    height: 18vw;
-    width: 15.5vw;
-    background-color: #21123E;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 6px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 #rooms li {

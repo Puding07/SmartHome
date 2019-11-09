@@ -11,6 +11,7 @@ module.exports = {
     content: './src/public/content.html',
     style: './src/style/style.css',
     mobile_style: './src/style/mobile-style.css',
+    tablet_style: './src/style/tablet-style.css',
     loading: './src/app/loading.js',
     selector: './src/app/selector.js'
   },
@@ -73,7 +74,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: ['style', 'mobile_style']
+      chunkFilename: ['style', 'mobile_style', 'tablet_style']
     })
   ]
 };

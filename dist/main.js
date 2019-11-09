@@ -171,7 +171,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/mobile-style.css */ \"./src/style/mobile-style.css\");\n/* harmony import */ var _style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! uikit/dist/js/uikit */ \"./node_modules/uikit/dist/js/uikit.js\");\n/* harmony import */ var uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uikit/dist/css/uikit.min.css */ \"./node_modules/uikit/dist/css/uikit.min.css\");\n/* harmony import */ var uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../node_modules/long-press-event/src/long-press-event.js */ \"./node_modules/long-press-event/src/long-press-event.js\");\n/* harmony import */ var _node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/app/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style/mobile-style.css */ \"./src/style/mobile-style.css\");\n/* harmony import */ var _style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_mobile_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _style_tablet_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/tablet-style.css */ \"./src/style/tablet-style.css\");\n/* harmony import */ var _style_tablet_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_tablet_style_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! uikit/dist/js/uikit */ \"./node_modules/uikit/dist/js/uikit.js\");\n/* harmony import */ var uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(uikit_dist_js_uikit__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uikit/dist/css/uikit.min.css */ \"./node_modules/uikit/dist/css/uikit.min.css\");\n/* harmony import */ var uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(uikit_dist_css_uikit_min_css__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../node_modules/long-press-event/src/long-press-event.js */ \"./node_modules/long-press-event/src/long-press-event.js\");\n/* harmony import */ var _node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_long_press_event_src_long_press_event_js__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/app/index.js?");
 
 /***/ }),
 
@@ -194,6 +194,17 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/style/style.css?");
+
+/***/ }),
+
+/***/ "./src/style/tablet-style.css":
+/*!************************************!*\
+  !*** ./src/style/tablet-style.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/style/tablet-style.css?");
 
 /***/ })
 
